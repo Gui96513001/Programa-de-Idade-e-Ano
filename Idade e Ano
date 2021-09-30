@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+int main(){
+	int ano_nasc, ano_atual, idade;
+	
+	setlocale(LC_ALL,"Portuguese");
+	
+	printf("Digite seu ano de nascimento: ");
+	scanf("%d",&ano_nasc);
+
+	printf("Digite seu ano atual: ");
+	scanf("%d",&ano_atual);
+	
+	idade = ano_atual - ano_nasc;
+	
+	printf("A idade é %d anos",idade);
+
+	printf("\n\n");
+	system("pause");
